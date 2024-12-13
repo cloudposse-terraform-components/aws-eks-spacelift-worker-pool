@@ -7,7 +7,7 @@ tags:
   - provider/spacelift
 ---
 
-# Component: `eks`
+# Component: `eks-spacelift-worker-pool`
 
 This component provisions the `WorkerPool` part of the
 [Kubernetes Operator](https://docs.spacelift.io/concepts/worker-pools/kubernetes-workers#kubernetes-workers) for
