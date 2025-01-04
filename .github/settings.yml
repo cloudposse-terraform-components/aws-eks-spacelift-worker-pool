@@ -5,5 +5,3 @@ repository:
   description: This component provisions the `WorkerPool` part of the Kubernetes Operator for Spacelift Worker Pools into an EKS cluster
   homepage: https://cloudposse.com/accelerate
   topics: terraform, terraform-component
-
-
