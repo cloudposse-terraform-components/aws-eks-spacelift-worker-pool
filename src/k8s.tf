@@ -212,4 +212,12 @@ resource "kubernetes_manifest" "spacelift_worker_pool" {
     kubernetes_role_v1.default,
     kubernetes_role_binding_v1.default
   ]
+
+  # Marks the field as managed by Kubernetes to avoid continually detecting drift
+  # https://github.com/hashicorp/terraform-provider-kubernetes/issues/1378
+  computed_fields = [
+    "metadata.annotations",
+    "metadata.labels",
+    "spec.pod.tolerations",
+  ]
 }
