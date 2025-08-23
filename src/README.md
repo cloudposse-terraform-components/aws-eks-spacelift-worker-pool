@@ -13,7 +13,6 @@ This component provisions the `WorkerPool` part of the
 [Kubernetes Operator](https://docs.spacelift.io/concepts/worker-pools/kubernetes-workers#kubernetes-workers) for
 [Spacelift Worker Pools](https://docs.spacelift.io/concepts/worker-pools#kubernetes) into an EKS cluster. You can
 provision this component multiple times to create multiple worker pools in a single EKS cluster.
-
 ## Usage
 
 > [!NOTE]
@@ -59,20 +58,8 @@ components:
       ecr_repo_name: infra
 ```
 
-## References
 
-- https://docs.spacelift.io/concepts/worker-pools#kubernetes
-- https://docs.spacelift.io/integrations/docker#customizing-the-runner-image
-- https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/resources/worker_pool
-- https://docs.spacelift.io/concepts/worker-pools#installation
-- https://github.com/spacelift-io/spacelift-helm-charts/tree/main/spacelift-workerpool-controller
-- https://github.com/spacelift-io/spacelift-helm-charts/blob/main/spacelift-workerpool-controller/values.yaml
-- https://registry.terraform.io/providers/hashicorp/aws/latest/docs#authentication-and-configuration
-- https://github.com/aws/aws-cli/issues/3875
-- https://github.com/boto/botocore/issues/2245
-
-<!-- prettier-ignore-start -->
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- markdownlint-disable -->
 ## Requirements
 
 | Name | Version |
@@ -197,7 +184,31 @@ components:
 | <a name="output_spacelift_worker_pool_manifest"></a> [spacelift\_worker\_pool\_manifest](#output\_spacelift\_worker\_pool\_manifest) | Spacelift worker pool Kubernetes manifest |
 | <a name="output_worker_pool_id"></a> [worker\_pool\_id](#output\_worker\_pool\_id) | Spacelift worker pool ID |
 | <a name="output_worker_pool_name"></a> [worker\_pool\_name](#output\_worker\_pool\_name) | Spacelift worker pool name |
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-<!-- prettier-ignore-end -->
+<!-- markdownlint-restore -->
+
+
+
+## References
+
+
+- [Spacelift Worker Pools (Kubernetes)](https://docs.spacelift.io/concepts/worker-pools#kubernetes) - 
+
+- [Customizing the Runner Image](https://docs.spacelift.io/integrations/docker#customizing-the-runner-image) - 
+
+- [Worker Pool](https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/resources/worker_pool) - 
+
+- [Installation](https://docs.spacelift.io/concepts/worker-pools#installation) - 
+
+- [spacelift-workerpool-controller](https://github.com/spacelift-io/spacelift-helm-charts/tree/main/spacelift-workerpool-controller) - 
+
+- [spacelift-workerpool-controller/values.yaml](https://github.com/spacelift-io/spacelift-helm-charts/blob/main/spacelift-workerpool-controller/values.yaml) - 
+
+- [Authentication and Configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#authentication-and-configuration) - 
+
+- [aws-cli/issues/3875](https://github.com/boto/botocore/issues/2245) - 
+
+
+
 
 [<img src="https://cloudposse.com/logo-300x69.svg" height="32" align="right"/>](https://cpco.io/homepage?utm_source=github&utm_medium=readme&utm_campaign=cloudposse-terraform-components/aws-eks-spacelift-worker-pool&utm_content=)
+
