@@ -1,6 +1,6 @@
 module "account_map" {
   source  = "cloudposse/stack-config/yaml//modules/remote-state"
-  version = "1.8.0"
+  version = "2.0.0"
 
   component   = "account-map"
   environment = module.iam_roles.global_environment_name
@@ -12,7 +12,7 @@ module "account_map" {
 
 module "eks" {
   source  = "cloudposse/stack-config/yaml//modules/remote-state"
-  version = "1.8.0"
+  version = "2.0.0"
 
   component = var.eks_component_name
 
@@ -21,7 +21,7 @@ module "eks" {
 
 module "ecr" {
   source  = "cloudposse/stack-config/yaml//modules/remote-state"
-  version = "1.8.0"
+  version = "2.0.0"
 
   component   = var.ecr_component_name
   environment = coalesce(var.ecr_environment_name, module.this.environment)
